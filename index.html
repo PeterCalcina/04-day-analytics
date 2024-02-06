@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nombre del autor">
+    <meta name="description" content="Descripcion del proyecto">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Analytics</title>
+</head>
+
+<body>
+
+    <div class="card-analytics">
+        <div class="card-header">
+            <h2 class="card-title">Traffic source types</h2>
+            <p class="card-subtitle">Views · Last 28 days</p>
+        </div>
+
+        <div class="card-body">
+            <div class="card-chart-analytics">
+                <canvas class="chart-analytics"></canvas>
+                <span>Traffic sources</span>
+            </div>
+
+            <div class="card-chart-item">
+                <div class="progress-container">
+                    <span>Channel pages</span>
+                    <div class="progress" style="--width-progress-bar: calc(37.5% + 50px)">
+                        <span class="progress-percent"> 37.5% </span>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <span>Direct or unknow</span>
+                    <div class="progress" style="--width-progress-bar: calc(33.6% + 50px)">
+                        <span class="progress-percent"> 33.6% </span>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <span>Search</span>
+                    <div class="progress" style="--width-progress-bar: calc(11% + 50px)">
+                        <span class="progress-percent"> 11% </span>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <span>External</span>
+                    <div class="progress" style="--width-progress-bar: calc(6% + 50px)">
+                        <span class="progress-percent"> 6% </span>
+                    </div>
+                </div>
+
+                <a href="#">See more</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+
+</body>
+
+</html>
